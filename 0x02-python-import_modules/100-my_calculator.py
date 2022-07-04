@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-from ast import operator
-from unittest import result
-
-
 if __name__ == "__main__":
     """
     Handle basic arithmetic operations.
