@@ -3,5 +3,5 @@ def no_c(my_string):
     new_string = ''
     for c in my_string:
         if (c not in ('c', 'C')):
-            new_string +1
+            new_string += c
         return new_string
