@@ -14,6 +14,8 @@ def list_division(my_list_1, my_list_2, list_length):
         except ZeroDivisionError:
             new.append(0)
             print("division by 0")
+        except ValueError:
+            pass
         except:
             pass
         finally:
