@@ -1,32 +1,34 @@
 #!/usr/bin/python3
-"""Square class"""
+""" Square class """
 
 
 class Square:
-    """empty class Square that defines a square
-    Attributes
-
-    size: size of the square
+    """ empty class Square that defines a square
+    Attributes:
+        size: size of the square
+        position: square margins
     """
     __size = 0
+    __position = 0
 
-    def __init__(self, ssize=0):
-        self.__size = ssize
+    def __init__(self, prmSize=0, prmPosition=(0, 0)):
+        self.size = prmSize
+        self.position = prmPosition
+
+    def area(self):
+        return self.__size ** 2
 
     @property
     def size(self):
         return self.__size
 
     @size.setter
-    def size(self, ssize=0):
-        if not isinstance(ssize, int):
+    def size(self, prmSize=0):
+        if not isinstance(prmSize, int):
             raise TypeError("size must be an integer")
-        if ssize < 0:
+        elif prmSize < 0:
             raise ValueError("size must be >= 0")
-        self.__size = ssize
-
-    def area(self):
-        return self.__size ** 2
+        self.__size = prmSize
 
     def my_print(self):
         if self.size == 0:
@@ -36,10 +38,6 @@ class Square:
                 print()
             for column in range(self.size):
                 print("{}{}".format(" " * self.position[0], "#" * self.size))
-
-        if self.size == 0:
-            print()
-    __position = 0
 
     @property
     def position(self):
