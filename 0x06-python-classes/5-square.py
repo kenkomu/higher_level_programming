@@ -2,9 +2,6 @@
 """Square class"""
 
 
-from traceback import print_tb
-
-
 class Square:
     """empty class Square that defines a square
     Attributes
