@@ -11,4 +11,4 @@ class Square:
     __size = 0
 
     def __init__(self, ssize):
-        self.size = ssize
+        self.__size = ssize
