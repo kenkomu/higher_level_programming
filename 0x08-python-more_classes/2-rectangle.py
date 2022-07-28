@@ -2,9 +2,6 @@
 """Rectangle class"""
 
 
-from sympy import re
-
-
 class Rectangle:
     """empty class Rectangle that defines a rectangle
     Attributes:
