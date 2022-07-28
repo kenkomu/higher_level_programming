@@ -2,6 +2,9 @@
 """Rectangle class"""
 
 
+from sympy import re
+
+
 class Rectangle:
     """empty class Rectangle that defines a rectangle
     Attributes:
@@ -31,7 +34,6 @@ class Rectangle:
     def height(self):
         return self.__height
 
-
     @height.setter
     def height(self, hheight):
         if not isinstance(hheight, int):
@@ -41,4 +43,9 @@ class Rectangle:
         self.__height = hheight
 
     def area(self):
-        return (__height * __width)
+        return (self.__height * self.__width)
+
+    def perimeter(self):
+        if (self.__width == 0) and (self.__height == 0):
+            return 0
+        return (self.__height * self.__width)
