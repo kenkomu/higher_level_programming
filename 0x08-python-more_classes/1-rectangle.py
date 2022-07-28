@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 """Rectangle class"""
 
-
-from numpy import isin
-
-
 class Rectangle:
     """empty class Rectangle that defines a rectangle
     Attributes:
