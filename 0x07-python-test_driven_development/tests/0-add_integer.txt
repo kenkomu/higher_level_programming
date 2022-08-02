@@ -1,0 +1,88 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``add_integer`` from the ``0-add_integer`` module:
+__________________________________________________________________________________
+>>> add_integer = __import__('0-add_integer').add_integer
+
+__________________________________________________________________________________
+Module documentation test
+>>> len(__import__("0-add_integer").__doc__) > 0
+True
+
+__________________________________________________________________________________
+Function documentation test
+>>> len(__import__("0-add_integer").add_integer.__doc__) > 0
+True
+
+__________________________________________________________________________________
+Add one value to default value
+>>> add_integer(6)
+104
+
+__________________________________________________________________________________
+Add two integers
+>>> add_integer(6, 4)
+10
+
+__________________________________________________________________________________
+Add one negative to positive value
+>>> add_integer(-1, 2)
+1
+
+__________________________________________________________________________________
+Add one positive to negative value
+>>> add_integer(100, -2)
+98
+
+__________________________________________________________________________________
+Add one negative value to default value
+>>> add_integer(-2)
+96
+
+__________________________________________________________________________________
+Add float value to negative value
+>>> add_integer(100.3,-2)
+98
+
+__________________________________________________________________________________
+Add float value to positive value
+>>> add_integer(100.3,2)
+102
+
+__________________________________________________________________________________
+Add float value to float value
+>>> add_integer(100.3,2.7)
+102
+
+__________________________________________________________________________________
+Only first invalid format parameter
+>>> add_integer('a')
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+__________________________________________________________________________________
+Only second invalid format parameter
+>>> add_integer(2, 'a')
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+__________________________________________________________________________________
+Double invalid format
+>>> add_integer('a', 'b')
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+__________________________________________________________________________________
+Too many argument
+>>> add_integer(1, 3, 2)
+Traceback (most recent call last):
+    ...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
