@@ -7,7 +7,7 @@ def add_integer(a, b=98):
     this function add two integer
     Attributes:
         a: first integer
-        b: second integer
+        b: optional second integer (init by 98 by default)
     """
     if isinstance(a, float):
         a = int(a)
