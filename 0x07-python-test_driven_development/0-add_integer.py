@@ -6,8 +6,8 @@ def add_integer(a, b=98):
     """ add_integer function
     this function add two integer
     Attributes:
-        prmA: first integer
-        prmB: second integer
+        a: first integer
+        b: second integer
     """
     if isinstance(a, float):
         a = int(a)
