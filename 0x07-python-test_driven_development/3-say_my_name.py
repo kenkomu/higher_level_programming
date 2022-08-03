@@ -10,7 +10,8 @@ def say_my_name(first_name, last_name=""):
 
     args:
         first_name = the first name
-        last_name = the last name"""
+        last_name = the last name
+    """
 
     if not isinstance(first_name, str):
         raise TypeError(
