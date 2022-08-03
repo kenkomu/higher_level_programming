@@ -4,7 +4,9 @@
 
 def add_integer(a, b=98):
     """ add_integer function
+    
     this function add two integer
+
     Attributes:
         a: first integer
         b: optional second integer (init by 98 by default)
