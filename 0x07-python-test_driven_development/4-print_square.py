@@ -11,10 +11,12 @@ def print_square(size):
     Attributes:
         size = square size
     """
-    if not isinstance(size, int) or isinstance(size, float):
+    if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:
         raise ValueError("size must be >= 0")
+    if size < 0 and isinstance(size, float):
+        raise TypeError("size must be an integer")
     for y in range(size):
         [print("#", end='') for x in range(size)]
         print()
