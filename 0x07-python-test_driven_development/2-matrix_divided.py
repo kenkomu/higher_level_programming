@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 """matrix_divided module"""
-from numpy import isin
-
-
 def matrix_divided(matrix, div):
     """
     divides all elements of a matrix
