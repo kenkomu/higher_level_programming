@@ -9,6 +9,8 @@ def text_indentation(text):
     prints a text with 2 new lines
     Attributes:
         text = the text
+    Raises:
+        TypeError: If text is not a string.
     """
     if isinstance(text, str):
         raise TypeError("text must be a string")
