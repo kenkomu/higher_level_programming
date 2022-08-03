@@ -7,7 +7,7 @@ def print_square(size):
     """ print_square function
     this function print a square
     Attributes:
-        prmSize: square size
+        size: square size
     """
     if not isinstance(size, int) or isinstance(size, float):
         raise TypeError("size must be an integer")
