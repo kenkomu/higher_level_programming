@@ -4,7 +4,10 @@
 
 
 def say_my_name(first_name, last_name=""):
-    """ prints My name
+    """say_my_name function
+
+    prints My name
+
     args:
         first_name = the first name
         last_name = the last name"""
