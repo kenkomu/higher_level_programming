@@ -2,11 +2,17 @@
 
 """say_my_name module"""
 
-def say_my_name(first_name="kenneth", last_name="njoro"):
+
+def say_my_name(first_name, last_name=""):
+    """ prints My name
+    args:
+        first_name = the first name
+        last_name = the last name"""
+
     if not isinstance(first_name, str):
-        raise TypeError (
+        raise TypeError(
             "first_name must be a string")
     if not isinstance(last_name, str):
-        raise TypeError (
+        raise TypeError(
             "last_name must be a string")
-    print("My name is {:d} {:d}",first_name,last_name)
+    print("My name is {:d} {:d}", first_name, last_name)
