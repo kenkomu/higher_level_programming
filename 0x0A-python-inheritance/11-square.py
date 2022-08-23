@@ -17,3 +17,7 @@ class Square(Rectangle):
     def area(self):
         """ Area function """
         return super().area()
+
+    def __str__(self):
+        """ Area function """
+        return super().__str__()
