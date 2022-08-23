@@ -1,0 +1,63 @@
+The ``7-base_geometry`` module
+======================
+
+Using ``BaseGeometry``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``BaseGeometry`` from the ``7-base_geometry`` module:
+__________________________________________________________________________________
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+__________________________________________________________________________________
+Module documentation test
+>>> len(__import__("7-base_geometry").__doc__) > 0
+True
+
+__________________________________________________________________________________
+Function documentation test
+>>> len(__import__("7-base_geometry").BaseGeometry.__doc__) > 0
+True
+
+__________________________________________________________________________________
+>>> bg = BaseGeometry()
+
+__________________________________________________________________________________
+Type return test
+>>> type(bg)
+<class '7-base_geometry.BaseGeometry'>
+
+__________________________________________________________________________________
+Not enough argument
+>>> bg.integer_validator("lorem ipsum")
+Traceback (most recent call last):
+    ...
+TypeError: integer_validator() missing 1 required positional argument: 'prmValue'
+
+__________________________________________________________________________________
+Too many argument
+>>> bg.integer_validator("lorem ipsum", 3, 27)
+Traceback (most recent call last):
+    ...
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+__________________________________________________________________________________
+Any integer argument
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
+    ...
+TypeError: name must be an integer
+
+__________________________________________________________________________________
+Nullable integer argument
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+    ...
+ValueError: age must be greater than 0
+
+__________________________________________________________________________________
+Negative integer argument
+>>> bg.integer_validator("distance", -4)
+Traceback (most recent call last):
+    ...
+ValueError: distance must be greater than 0
