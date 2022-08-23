@@ -5,4 +5,4 @@
 def inherits_from(obj, a_class):
     """inherits_from function"""
     return (type(obj) is not object and
-            issubclass(obj, a_class))
+            issubclass(type(obj, a_class)))
