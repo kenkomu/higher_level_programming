@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""is_same_class module"""
+"""inherits_from module"""
 
 
-def is_same_class(obj, a_class):
-    """is_same_class function"""
+def inherits_from(obj, a_class):
+    """inherits_from function"""
     return type(obj) is object
