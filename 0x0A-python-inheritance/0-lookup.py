@@ -14,3 +14,6 @@ class Number :
           
 n = Number(2)
 n.lookup()
+print(n.__dict__)
+print(n.__dict__.keys())
+print(n.__dict__.values())
