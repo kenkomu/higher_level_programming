@@ -1,0 +1,79 @@
+The ``4-print_square`` module
+======================
+
+Using ``print_square``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``print_square`` from the ``4-print_square`` module:
+>>> print_square = __import__('4-print_square').print_square
+
+__________________________________________________________________________________
+Module documentation test
+>>> len(__import__("4-print_square").__doc__) > 0
+True
+
+__________________________________________________________________________________
+Function documentation test
+>>> len(__import__("4-print_square").print_square.__doc__) > 0
+True
+
+__________________________________________________________________________________
+Print a square of size 4
+>>> print_square(4)
+####
+####
+####
+####
+
+__________________________________________________________________________________
+Print a square of size 10
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+__________________________________________________________________________________
+Print a square of size 0
+>>> print_square(0)
+<BLANKLINE>
+
+__________________________________________________________________________________
+Print a square of size 1
+>>> print_square(1)
+#
+
+__________________________________________________________________________________
+Invalid square size
+>>> print_square('a')
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+__________________________________________________________________________________
+Invalid square size
+>>> print_square(-2)
+Traceback (most recent call last):
+    ...
+ValueError: size must be >= 0
+
+__________________________________________________________________________________
+Invalid square size format
+>>> print_square(1.0)
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+__________________________________________________________________________________
+Too many argument
+>>> print_square(2, 3)
+Traceback (most recent call last):
+    ...
+TypeError: print_square() takes 1 positional argument but 2 were given
