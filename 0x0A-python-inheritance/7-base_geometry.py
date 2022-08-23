@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""base_geometry module"""
+""" BaseGeometry module """
 
 
 class BaseGeometry:
-    """BaseGeometry class"""
+    """ BaseGeometry class """
 
     def area(self):
         """ area function """
@@ -11,7 +11,7 @@ class BaseGeometry:
 
     def integer_validator(self, name, value):
         """ integer_validator function """
-        if (not isinstance(value, int)):
+        if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
-        if (value <= 0):
+        if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
