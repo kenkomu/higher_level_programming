@@ -1,19 +1,13 @@
 #!/usr/bin/python3
-class Number :
-      
-    # Class Attributes
-    one = 'first'
-    two = 'second'
-    three = 'third'
-      
-    def __init__(self, attr):
-        self.attr = attr
-          
+class emp: 
+    name='Harsh'
+    salary='25000'
     def lookup(obj): 
-        print(obj.one, obj.two, obj.three, obj.attr)
-          
-n = Number(2)
-n.lookup()
-print(n.__dict__)
-print(n.__dict__.keys())
-print(n.__dict__.values())
+        print (obj.name) 
+        print (obj.salary) 
+e1 = emp()  
+print (getattr(e1,'name')) 
+print (hasattr(e1,'name')) 
+setattr(e1,'height',152)  
+print (getattr(e1,'height')) 
+delattr(emp,'salary') 
