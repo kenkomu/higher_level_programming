@@ -12,5 +12,5 @@ def write_file(filename="", text=""):
         for word in charCount:
             for char in word:
                 charCount += 1
-
+        myFile.closed
     return myFile.write(charCount)
