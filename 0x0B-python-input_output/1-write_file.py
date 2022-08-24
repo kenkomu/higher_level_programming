@@ -5,12 +5,5 @@
 def write_file(filename="", text=""):
     charCount = 0
     with open(filename, mode="w", encoding="UTF-8") as myFile:
-        if myFile.tell() == 0:
-            myFile.write(text)
-        else:
-            myFile.write(text)
-        for word in charCount:
-            for char in word:
-                charCount += 1
-        myFile.closed
+        myFile.write(text)
     return myFile.write(charCount)
