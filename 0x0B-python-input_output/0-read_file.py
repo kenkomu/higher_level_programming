@@ -8,4 +8,3 @@ def read_file(filename="UTF8"):
         read_file = myFile.read()
         print(read_file)
     myFile.closed
-    return read_file
