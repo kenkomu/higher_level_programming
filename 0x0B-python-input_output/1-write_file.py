@@ -4,7 +4,7 @@
 
 def write_file(filename="", text=""):
     charCount = 0
-    with open(filename, mode="a", encoding="UTF-8") as myFile:
+    with open(filename, mode="w", encoding="UTF-8") as myFile:
         if myFile.tell() == 0:
             myFile.write(text)
         else:
