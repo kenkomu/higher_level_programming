@@ -6,4 +6,5 @@ def write_file(filename="", text=""):
     charCount = 0
     with open(filename, mode="w", encoding="UTF-8") as myFile:
         charCount = myFile.write(text)
+    myFile.closed
     return charCount
