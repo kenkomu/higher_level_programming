@@ -12,6 +12,6 @@ def save_to_json_file(my_obj, filename):
             filename: name of the file
             my_obj: object to append
     """
-    with open('filename', mode='w') as file:
+    with open('filename','w') as file:
         json.dump(my_obj, file)
     file.closed
