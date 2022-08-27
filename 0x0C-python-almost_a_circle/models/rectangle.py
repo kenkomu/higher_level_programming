@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ rectangle module """
 
+from turtle import width
 from models.base import Base
 
 
@@ -67,3 +68,6 @@ class Rectangle(Base):
         """y setter"""
         Base.integer_validation("y", y)
         self.__y = y
+
+    def area(self):
+        return self.width * self.height
