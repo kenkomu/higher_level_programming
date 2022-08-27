@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" rectangle module """
+""" Square module """
+
 
 from models.base import Base
 from models.rectangle import Rectangle
@@ -7,6 +8,7 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """ Square class """
+
     def __init__(self, size, x=0, y=0, id=None):
         """
             Constructor function
@@ -18,11 +20,11 @@ class Square(Rectangle):
                 id:     id
         """
         super().__init__(
-            width=width
-            height=height
-            x=x
-            y=y
-            id=id
+            prmWidth=size,
+            prmHeight=size,
+            prmX=x,
+            prmY=y,
+            prmId=id
         )
 
     def __str__(self):
@@ -44,7 +46,7 @@ class Square(Rectangle):
     @size.setter
     def size(self, value):
         """ size setter """
-        Base.strict_integer("size", value)
+        Base.strict_integer_validation("size", value)
         self.width = value
         self.height = value
 
