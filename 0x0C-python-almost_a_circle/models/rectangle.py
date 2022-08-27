@@ -54,7 +54,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, x):
         """x setter"""
-        Base.strict_integer("x", x)
+        Base.integer_validation("x", x)
         self.__x = x
 
     @property
@@ -65,5 +65,5 @@ class Rectangle(Base):
     @y.setter
     def y(self, y):
         """y setter"""
-        Base.strict_integer("y", y)
+        Base.integer_validation("y", y)
         self.__y = y
