@@ -98,4 +98,4 @@ class Rectangle(Base):
         )
 
     def update(self, *args):
-        return (args)
+        return (id, width, height, x, y, args)
