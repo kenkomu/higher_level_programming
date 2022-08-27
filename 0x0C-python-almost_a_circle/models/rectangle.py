@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ rectangle module """
 
+from models.base import Base
 
 class Rectangle:
     __height = None
