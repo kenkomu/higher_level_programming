@@ -17,10 +17,6 @@ class Rectangle(Base):
         Private instance
 
         Args:
-            width:width
-            height:height
-            x:x
-            y:y
             id:id
         """
         super().__init__(id=id)
