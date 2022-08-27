@@ -14,7 +14,7 @@ class Base:
         Args:
             id:id
         """
-        if id is None:
+        if None is not id:
             self.id = id
         else:
             Base.__nb_objects += 1
