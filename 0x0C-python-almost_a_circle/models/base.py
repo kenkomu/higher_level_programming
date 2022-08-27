@@ -26,7 +26,7 @@ class Base:
     @staticmethod
     def strict_integer(name, value):
         if type(name) is not int:
-            raise TypeError("{} must be an integer", name)
+            raise TypeError("{} must be an integer".format (name))
 
         if value <= 0:
-            raise ValueError("{} must be >= 0")
+            raise ValueError("{} must be >= 0".format(name))
