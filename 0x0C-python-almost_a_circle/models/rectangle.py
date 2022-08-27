@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 """ rectangle module """
 
-from ast import arg
-from re import X
-from tkinter import Y
-from turtle import width
 from models.base import Base
 
 
@@ -101,4 +97,4 @@ class Rectangle(Base):
         )
 
     def update(self, *args, **kwargs):
-        return self.id, self.width, self.height, self.x, self.y(args)
+        return self.id, self.width, self.height, self.x, self.y(args, kwargs)
