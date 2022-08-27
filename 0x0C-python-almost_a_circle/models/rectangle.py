@@ -100,8 +100,8 @@ class Rectangle(Base):
         )
 
     def update(self, *args):
-        self.id.update(args)
-        self.width.update(args)
-        self.height.update(args)
-        self.x.update(args)
-        self.y.update(args)
+        self.id = args
+        self.width = args
+        self.height = args
+        self.x = args
+        self.y = args
