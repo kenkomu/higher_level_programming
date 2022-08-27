@@ -2,6 +2,9 @@
 """ base module """
 
 
+from termios import VLNEXT
+
+
 class Base:
     """Base class"""
     __nb_objects = 0
@@ -19,3 +22,10 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def strict_integer(name, value):
+        if type(name) is not int:
+            raise TypeError("{} must be an integer", name)
+
+        if value <= 0:
+            raise ValueError("{} must be >= 0")
