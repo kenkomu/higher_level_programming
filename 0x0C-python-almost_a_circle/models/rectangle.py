@@ -3,6 +3,7 @@
 
 from ast import arg
 from re import X
+from tkinter import Y
 from turtle import width
 from models.base import Base
 
@@ -100,8 +101,8 @@ class Rectangle(Base):
         )
 
     def update(self, *args):
-        self.id = args
-        self.width = args
-        self.height = args
-        self.x = args
-        self.y = args
+        args.update(id)
+        args.update(width)
+        args.update(height)
+        args.update(x)
+        args.update(y)
