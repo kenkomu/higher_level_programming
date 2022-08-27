@@ -31,7 +31,7 @@ class Base:
                 name: name of the variable
                 value: value of the variable
         """
-        if type(name) is not int:
+        if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
 
         if value <= 0:
