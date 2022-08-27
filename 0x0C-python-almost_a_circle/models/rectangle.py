@@ -32,7 +32,7 @@ class Rectangle(Base):
     @width.setter
     def width(self, width):
         """width setter"""
-        Base.strict_integer(Base, width)
+        Base.strict_integer("width", width)
         self.__width = width
 
     @property
@@ -41,7 +41,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, height):
-        Base.strict_integer(Base, height)
+        Base.strict_integer("height", height)
         self.__height = height
 
     @property
@@ -50,7 +50,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, x):
-        Base.strict_integer(Base, x)
+        Base.strict_integer("x", x)
         self.__x = x
 
     @property
@@ -59,5 +59,5 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, y):
-        Base.strict_integer(Base, y)
+        Base.strict_integer("y", y)
         self.__y = y
