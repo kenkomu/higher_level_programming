@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 """ rectangle module """
 
-from models.base import Base
+import imp
+from base import Base
 
 class Rectangle(Base):
     """class Rectangle"""
-
-
     __height = None
     __width = None
     __x = None
