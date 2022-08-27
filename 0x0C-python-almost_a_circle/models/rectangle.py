@@ -4,11 +4,14 @@
 from models.base import Base
 
 class Rectangle(Base):
+    """class Rectangle"""
+
+
     __height = None
     __width = None
     __x = None
     __y = None
-    """class Rectangle"""
+    
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         Private instance
