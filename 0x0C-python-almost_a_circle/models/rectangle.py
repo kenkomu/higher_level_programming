@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ rectangle module """
 
-import imp
 from base import Base
 
 class Rectangle(Base):
