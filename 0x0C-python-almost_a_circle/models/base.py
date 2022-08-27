@@ -25,8 +25,14 @@ class Base:
 
     @staticmethod
     def strict_integer(name, value):
+        """
+            strict integer
+            Args:
+                name: name of the variable
+                value: value of the variable
+        """
         if type(name) is not int:
-            raise TypeError("{} must be an integer".format (name))
+            raise TypeError("{} must be an integer".format(name))
 
         if value <= 0:
             raise ValueError("{} must be >= 0".format(name))
