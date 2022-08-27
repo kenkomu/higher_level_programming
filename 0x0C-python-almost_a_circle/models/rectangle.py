@@ -100,4 +100,4 @@ class Rectangle(Base):
         )
 
     def update(self, *args):
-        return (self.id, self.width, self.height, self.x, self.y)
+        return (self.id, self.width, self.height, self.x, self.y, args)
