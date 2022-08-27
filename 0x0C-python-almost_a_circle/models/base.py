@@ -36,3 +36,17 @@ class Base:
 
         if value <= 0:
             raise ValueError("{} must be > 0".format(name))
+
+    @staticmethod
+    def integer_validation(name, value):
+        """
+            strict integer
+            Args:
+                name: name of the variable
+                value: value of the variable
+        """
+        if type(value) is not int:
+            raise TypeError("{} must be an integer".format(name))
+
+        if value < 0:
+            raise ValueError("{} must be >= 0".format(name))
