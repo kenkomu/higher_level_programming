@@ -96,3 +96,6 @@ class Rectangle(Base):
             self.width,
             self.height
         )
+
+    def update(self, *args):
+        return (args)
