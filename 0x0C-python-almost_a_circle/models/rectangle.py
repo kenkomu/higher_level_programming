@@ -3,7 +3,7 @@
 
 from models.base import Base
 
-class Rectangle:
+class Rectangle(Base):
     __height = None
     __width = None
     __x = None
