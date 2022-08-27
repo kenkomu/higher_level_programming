@@ -2,6 +2,7 @@
 """ rectangle module """
 
 from ast import arg
+from re import X
 from turtle import width
 from models.base import Base
 
@@ -99,9 +100,9 @@ class Rectangle(Base):
         )
 
     def update(self, *args):
-        self.__id(args)
-        self.__width(args)
-        self.__height(args)
-        self.__x(args)
-        self.__y(args)
+        self.__id=id(args)
+        self.__width = width(args)
+        self.__height = height(args)
+        self.__x = x(args)
+        self.__y = y(args)
         return (args)
