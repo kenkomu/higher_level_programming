@@ -37,27 +37,33 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """ height getter """
         return self.__height
 
     @height.setter
     def height(self, height):
+        """height setter"""
         Base.strict_integer("height", height)
         self.__height = height
 
     @property
     def x(self):
+        """x getter"""
         return self.__x
 
     @x.setter
     def x(self, x):
+        """x setter"""
         Base.strict_integer("x", x)
         self.__x = x
 
     @property
     def y(self):
+        """y getter"""
         return self.__y
 
     @y.setter
     def y(self, y):
+        """y setter"""
         Base.strict_integer("y", y)
         self.__y = y
