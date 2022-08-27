@@ -23,6 +23,7 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def strict_integer(name, value):
         if type(name) is not int:
             raise TypeError("{} must be an integer", name)
