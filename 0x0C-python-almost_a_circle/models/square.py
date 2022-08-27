@@ -47,3 +47,39 @@ class Square(Rectangle):
         Base.strict_integer("size", value)
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """
+            Function that assigns an argument to each attribute
+            Args:
+                args: argument's array
+                kwargs: argument's dictionary
+        """
+        if len(args) > 0:
+            if len(args) > 0:
+                self.strict_integer_validation("id", args[0])
+                self.id = args[0]
+            if len(args) > 1:
+                self.width = args[1]
+                self.height = args[1]
+            if len(args) > 2:
+                self.x = args[2]
+            if len(args) > 3:
+                self.y = args[3]
+        else:
+            if "id" in kwargs:
+                self.strict_integer_validation("id", kwargs["id"])
+                self.id = kwargs["id"]
+            if "size" in kwargs:
+                self.width = kwargs["size"]
+                self.height = kwargs["size"]
+            if "x" in kwargs:
+                self.x = kwargs["x"]
+            if "y" in kwargs:
+                self.y = kwargs["y"]
+
+    def to_dictionary(self):
+        """
+            Function that returns the dictionary representation of the instance
+        """
+        return {"x": self.x, "y": self.y, "id": self.id, "size": self.size}
