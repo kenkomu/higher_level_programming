@@ -2,7 +2,7 @@
 function add (a, b) {
   let result;
   if (isNaN(parseInt(process.argv[2] || parseInt(process.argv[3])))) {
-    console.log('NaN');
+    console.log();
   } else {
     result = a + b;
     console.log(result);
