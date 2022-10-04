@@ -2,8 +2,8 @@
 /**
  * prints the first argument passed to it:
  */
- if (process.argv.length === 2){
+ if (process.argv === 2){
     console.log('No argument');
-}else if (process.argv.length === 3){
-    console.log(process.argv.length(3));
+}else {
+    console.log(process.argv[3]);
 }
