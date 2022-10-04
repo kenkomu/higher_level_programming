@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 /**
  * Add two numbers
  *
@@ -13,4 +14,4 @@ function add (a, b) {
 /**
  * prints the addition of 2 integers
  */
-console.log(add(parseInt(process.argv[2])), (parseInt(process.argv[3])));
+console.log(add(parseInt(process.argv[2]), (parseInt(process.argv[3]))));
