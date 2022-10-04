@@ -4,7 +4,7 @@
  * prints x times “C is fun”
  */
 
-const size = process.argv[2];
+const size = parseInt(process.argv[2]);
 let i; let j;
 
 for (i = 0; i < size; i++) {
