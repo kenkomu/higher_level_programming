@@ -13,7 +13,7 @@ module.exports = class Rectangle {
       for (let column = 0; column < this.width; column++) {
         process.stdout.write('X');
       }
-      process.stdout.write('/n');
+      process.stdout.write('\n');
     }
   }
 };
