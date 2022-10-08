@@ -8,7 +8,7 @@ module.exports = class Square extends Rectangle {
     } else {
       for (let row = 0; row < this.height; row++) {
         for (let column = 0; column < this.width; column++) {
-          process.stdout.write('c');
+          process.stdout.write(c);
         }
         process.stdout.write('\n');
       }
