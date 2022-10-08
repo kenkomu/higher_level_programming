@@ -4,7 +4,7 @@ const Rectangle = require('./5-square');
 module.exports = class Square extends Rectangle {
   charPrint (c) {
     if (c === undefined) {
-      process.stdout.write('');
+      this.print();
     } else {
       for (let row = 0; row < this.height; row++) {
         for (let column = 0; column < this.width; column++) {
