@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const { dict } = require('101-data.js');
+const { dict } = require('101-data');
 const newDict = {};
 for (const [, value] of Object.entries(dict)) {
   const list = [];
