@@ -1,3 +1,4 @@
+#!/usr/bin/node
 exports.esrever = function (list) {
   const arr1 = [];
   while (list.length) {
