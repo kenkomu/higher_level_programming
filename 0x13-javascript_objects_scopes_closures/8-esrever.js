@@ -4,4 +4,5 @@ exports.esrever = function (list) {
   list.forEach(element => {
     aar1.unshift(element);
   });
+  return (aar1);
 };
