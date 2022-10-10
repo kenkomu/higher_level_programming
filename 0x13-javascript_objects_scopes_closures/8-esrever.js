@@ -1,8 +1,7 @@
 exports.esrever = function (list) {
-  list = [];
-  const aar1 = [];
-  list.forEach(element => {
-    aar1.unshift(element);
-  });
-  return (aar1);
+  const arr1 = [];
+  while (list.length) {
+    arr1.push(list.pop());
+  }
+  return arr1;
 };
