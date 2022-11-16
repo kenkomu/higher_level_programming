@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-def find_peak(arr, n):
+def find_peak(list_of_integers, n):
+    list =list_of_integers[6]
+    n = list.len
     if (n == 1):
         return 0
     if (arr[0] >=arr[1]):
