@@ -1,14 +1,12 @@
 #!/usr/bin/python3
+"""script to find a peak"""
+
+
 def find_peak(list_of_integers, n):
-    list =list_of_integers[6]
-    n = list.len
-    if (n == 1):
+    """
+        function that find the first peak
+    """
+    if len(list_of_integers) <= 0:
         return 0
-    if (arr[0] >=arr[1]):
-        return n - 1
-    for i in range (1, n - 1):
-        if (arr[i] >= arr[i - 1] and arr[i] >= arr[i + 1]):
-            return i
-arr = [1, 3, 20, 4, 1, 0]
-n = len(arr)
-print("INdex of a peak point is", find_peak(arr, n))
+    list_of_integers.sort()
+    return (list_of_integers[-1])
